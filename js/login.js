@@ -163,29 +163,6 @@ var animate={
                 if(window.XMLHttpRequest){
                     xhr=new XMLHttpRequest();
                 }else{
-                    /*CreateXMLDoc();
-                    function CreateXMLDoc()
-                    {
-                        //判断是否为Firefox或IE
-                        var moz = (typeof document.implementation != 'undefined')   && (typeof document.implementation.createDocument != 'undefined');
-                        var ie = (typeof window.ActiveXObject != 'undefined');
-                        if (moz)
-                        {
-
-                            xhr = document.implementation.createDocument("", "doc", null);//创建FIREFOX下XML文档对象
-
-                        }
-                        else if (ie)
-                        {
-                            xhr = new ActiveXObject("MSXML2.DOMDocument.3.0");
-                            xhr.async = true;
-                            xhr.resolveExternals = true;
-                            while( xhr.readyState != 4) {};//创建IE下XML文档对象
-                        }else{
-
-                        }
-                        return xhr;
-                    }*/
                     xhr=new ActiveXObject('Microsoft.XMLHTTP');
                 }
                 xhr.onreadystatechange=function(){

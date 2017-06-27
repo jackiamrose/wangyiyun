@@ -11,9 +11,9 @@ mysql_select_db('test',$conn);
 mysql_query("set names 'GBK'");
 
 /*$sql1 = 'CREATE DATABASE TEST';
-$retval = mysql_query( $sql1, $conn )*/
+$retval = mysql_query( $sql1, $conn );
 
-/*$sql = "CREATE TABLE tb( ".
+$sql = "CREATE TABLE tb( ".
     "user VARCHAR(40) NOT NULL, ".
     "password VARCHAR(40) NOT NULL , ".
     "telphone VARCHAR(11) NOT NULL, ".
